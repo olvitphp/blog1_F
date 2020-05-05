@@ -1,0 +1,41 @@
+    I. Урок  Установка Laravel.
+
+  1. Установка composer
+
+  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+  php -r "if (hash_file('sha384', 'composer-setup.php') === 'e0012edf3e80b6978849f5eff0d4b4e4c79ff1609dd1e613307e16318854d24ae64f26d17af3ef0bf7cfb710ca74755a') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+  php composer-setup.php
+  php -r "unlink('composer-setup.php');"
+
+  2.Установка Laravel (подключение plugin LARAVEL)
+
+  composer create-project --prefer-dist laravel/laravel blog
+
+     3. Урок
+
+3. php artisan make:model Models/BlogCategory -m
+4. php artisan make:model Models/BlogPost -m
+
+     4. Урок
+
+composer update
+
+     5. Урок
+
+5. php artisan migrate
+
+    6. Урок
+6. php artisan make:seeder UsersTableSeeder
+7. php artisan make:seeder BlogCategoriesTableSeeder
+
+    7. Урок
+8.     php artisan make:factory BlogPostFactory
+9.     php artisan make:factory UserFactory
+
+    10. Урок
+ 10. php artisan make:controller Blog/BaseController
+ 11. php artisan make:controller Blog/PostController --resource
+
+
+     урок последний 10  05.05.20
+
